@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Train ticket</title>
+</head>
+<style>
+    
+    article {
+        border-top-style: dashed;        
+    }
+    select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-size: 12px;
+        width: 90px;
+     }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        color:rgb(65, 61, 61); 
+    }
+</style>
+<body style = "background-color: rgb(231, 228, 219)">
+  <header>
+    <h1>Book Now!</h1>
+  </header>
+  <article>
+    <h2>Pick-up</h2>
+    <div>
+    <input type="checkbox" id="checkbox1" name="checkbox1">
+    <label for="checkbox1">E-ticket (via email)</label>
+</div>
+<div>
+    <input type="checkbox" id="checkbox2" name="checkbox2">
+    <label for="checkbox2">Physical ticket (collect at station)</label>
+</div>
+</article>
+
+<article>
+        <h2>Contact Information</h2>
+        <p> Email </p>
+        <input type="text" id="myTextbox"> 
+    <div>
+        <p>Contact No.</p>
+        <input type="text" id="myTextbox">
+    </div>
+</article>
+
+<article>
+    <h2>Choose Seat</h2>
+        <p> Class </p>
+        <select>
+            <option value="option1">Class A</option>
+            <option value="option2">Class B</option>
+            <option value="option3">Class C</option>
+          </select> 
+    <div>
+        <p> Area </p>
+        <select>
+            <option value="option1">Window</option>
+            <option value="option2">Aisle</option>
+            <option value="option3">Coach</option>
+          </select> 
+    </div>
+
+    <div>
+        <p> Other preferences (Not Guaranteed)</p>
+        <input type="text" id="myTextbox">
+    </div>
+</article>
+
+<article>
+    <h2> Promotion </h2>
+    <p> Discount code </p>
+    <input type="text" id="myTextbox">
+    <div>
+        <button> Next </button>
+    </div>
+</article>
+</body>
+</html>
+
+
+
+
+
+
+
