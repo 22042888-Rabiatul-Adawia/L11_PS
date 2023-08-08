@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("anime.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  img{
+    width:auto;
+    height: auto;
+  }
+  
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #777;
+  }
+
+  a:hover {
+    color: black;
+
+  }
+  
+</style>
+<body>
+    
+  <div class="login-container">
+    <h2>Signup
+    <form>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="input-group">
+        <table>
+            <tr>
+                <th>
+        <label for="password">Password</label>
+        </th>
+        <th>
+        <input type="password" id="password" name="password" required>
+        </th>
+            </tr>
+            <tr>
+                <th>
+        <label for="Confirm password">Confirm password</label>
+        </th>
+        <th>
+        <input type="Confirm password" id="Confirm password" name="Confirm password" required>
+        </th>
+    </tr>
+
+
+    </table>
+      </div>
+      <input type="submit" value="Signup">
+      <div class="links">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

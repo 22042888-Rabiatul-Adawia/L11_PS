@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Timetable</title>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: antiquewhite;
+    }
+
+    header {
+        background-color: #4490bd;
+        height: 150px;
+    }
+
+    h1 {
+    text-align: center;
+    }
+
+  .destination {
+        background-color: #D1D182;
+        text-align: center;
+        width: 80%;
+    }
+
+    .logo {
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 200px;
+        height: 100px;
+    }
+
+    .plan {
+        text-align: left;
+        background-color: white;
+    }
+
+    #timings td, #timings th {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #timings th {
+        background-color: #4490bd;
+        
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        
+    }
+
+    #timings {
+        border-style: solid;
+        border-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+  
+    li {
+        margin-bottom: 5px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .text {
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        text-align: left;       
+    }
+
+    .journey {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    p {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <button class = logo>
+            <h1> Logo </h1>
+            <a href = #> <!-- link to home page-->
+            </a>
+        </button>
+    </header>
+   
+
+    <div>
+        <h1 class = destination > 
+            Destination A to Destination B
+         </h1>
+    </div>
+
+<div class = "container">
+    <table  id = "timings">
+        <tr>
+            <th>Date</th>
+            <th>Train Service 1</th>
+            <th>Train Service 2</th>
+        </tr>
+
+        <tr>
+            <td>Sun, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mon, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tues, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Wed, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 07:00 AM</li>
+                    <li>Departure: 08:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Thurs, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fri, DD MMM</td>
+                <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Sat, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class = "text">
+        <h1 class = "journey"> Journey Plan</h1>
+        <p>
+            Pax: --
+        </p>
+
+        <p>
+            Duration of Journey: --
+        </p>
+
+        <p>
+            Seats available: --
+        </p>
+
+        <p>
+            Fare: -- SGD
+        </p>
+    </div>
+</div>
+    
+    <div>
+        <h1 class = destination > 
+            Destination B to Destination A
+        </h1>
+    </div>
+
+  
+<div class = "container">
+    <table  id = "timings">
+        <tr>
+            <th>Date</th>
+            <th>Train Service 1</th>
+            <th>Train Service 2</th>
+        </tr>
+
+        <tr>
+            <td>Sun, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mon, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tues, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Wed, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 07:00 AM</li>
+                    <li>Departure: 08:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Thurs, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fri, DD MMM</td>
+                <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Sat, DD MMM</td>
+            <td>
+                <ul>
+                    <li>Arrival: 08:00 AM</li>
+                    <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                <li>Arrival: 08:00 AM</li>
+                <li>Departure: 09:30 AM</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class = "text">
+        <h1 class = "journey"> Journey Plan</h1>
+        <p>
+            Pax: --
+        </p>
+
+        <p>
+            Duration of Journey: --
+        </p>
+
+        <p>
+            Seats available: --
+        </p>
+
+        <p>
+            Fare: -- SGD
+        </p>
+    </div>
+
+</div>
+   
+
+</body>
+</html>

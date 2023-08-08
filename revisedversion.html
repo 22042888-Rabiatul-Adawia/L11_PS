@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Train Ticket Confirmation</title>
+  <style>
+    .confirmation {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .line{
+        height: 2px;
+        background:black;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        text-align: center;
+    }
+    .email{
+    text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Train Ticket Confirmation</h1>
+  <div class="line"></div>
+
+  <div class="email">
+<h3>Please input email here</h3>
+  <input type="email" placeholder="email here thanks">
+  </div>
+
+ <table style="align-items: center;">
+    <tr>
+        <td>
+            <h3 style="background-color: aqua; margin-left: 30px;">important Details</h3>
+        </td>
+        <td style="padding-left: 210px;">
+            <h2 style="text-align: center;">Ticket Details</h2>
+    <p>Train Name: ABC Express</p>
+    <p>Departure: New York</p>
+    <p>Destination: Los Angeles</p>
+    <p>Price: $99.99</p>
+        </td>
+    </tr>
+ </table>
+  
+ <div class="line"></div>
+
+ 
+<br>
+<br>
+  
+
+  <button id="checkoutBtn">Checkout</button>
+  <div id="confirmationMsg"></div>
+  
+  <script>
+    document.getElementById('checkoutBtn').addEventListener('click', function() {
+      var confirmationMsg = document.getElementById('confirmationMsg');
+      confirmationMsg.textContent = 'Ticket Confirmed! Thank you for your purchase.';
+      confirmationMsg.classList.add('confirmation');
+    });
+  </script>
+</body>
+</html>
